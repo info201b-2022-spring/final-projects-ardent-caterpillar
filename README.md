@@ -8,7 +8,9 @@ about the statistics behind the professional level of one of our favorite games.
 ## What other examples of data driven project have you found related to this domain (share at least 3)?
 
 1.) [Predicting NBA Draft Success](https://towardsdatascience.com/nba-draft-analysis-using-machine-learning-to-project-nba-success-a1c6bf576d19)
+
 2.) [The affects of Age in the NBA](https://towardsdatascience.com/what-does-data-tell-us-about-ageing-in-the-modern-nba-31bcc396f177)
+
 3.) [Are 3-point shots more representative for success than 2-point shots](https://towardsdatascience.com/are-3-pointers-more-important-than-2-pointers-in-the-nba-1fa8e1422c60)
 
 ## What data-driven questions do you hope to answer about this domain (share at least 3)?
