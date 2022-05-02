@@ -39,8 +39,13 @@ Does a players position affect the amount of 3 pointers they shoot?
 
 
 ## Data 3
-Where did you download the data (e.g., a web URL)?  
-How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What questions (from above) can be answered using the data in this dataset?  
+### Where did you download the data (e.g., a web URL)?
+https://www.basketball-reference.com/leagues/NBA_2018_per_poss.html
+### How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about? 
+
+### How many observations (rows) are in your data?
+540
+### How many features (columns) are in the data?
+31
+### What questions (from above) can be answered using the data in this dataset?  
+Does a players position affect the amount of 3 pointers they shoot?
