@@ -42,7 +42,7 @@ Does a players position affect the amount of 3 pointers they shoot?
 ### Where did you download the data (e.g., a web URL)?
 https://www.basketball-reference.com/leagues/NBA_2018_per_poss.html
 ### How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about? 
-
+Player tracking data for each of the players in the NBA was collected from basketball-reference.com. The data set includes stats from the 2015-16 season to the 2018-19 season. The data was only collected during the regualr season and excludes post-season stats. The player tracking data was collected from the NBA's website.
 ### How many observations (rows) are in your data?
 540
 ### How many features (columns) are in the data?
