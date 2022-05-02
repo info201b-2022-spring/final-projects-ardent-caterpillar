@@ -24,7 +24,7 @@ We can answer the question, What position statistically scores the most points.
 
 
 ## Data 2 
-Where did you download the data (e.g., a web URL)?  
+Where did you download the data (e.g., a web URL)? https://www.kaggle.com/datasets/acasalan/nba-3-point-shooting-202122-corrections   
 How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?  
 How many observations (rows) are in your data?  
 How many features (columns) are in the data?  
