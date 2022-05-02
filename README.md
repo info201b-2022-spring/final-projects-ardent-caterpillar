@@ -13,7 +13,7 @@ Does a players position affect the amount of 3 pointers they shoot?
 
 
 ## Data 1  
-#### Where did you download the data (e.g., a web URL)?  
+#### **Where did you download the data (e.g., a web URL)?**  
 I found this data using Kaggle https://www.kaggle.com/datasets/vivovinco/nba-player-stats?select=2021-2022+NBA+Player+Stats+-+Regular.csv  
 #### How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?   
 The data was compiled by the team Vivo Vinco, Fahmi Sajid, Jatin but collected from Basketball Reference (https://www.basketball-reference.com/leagues/NBA_2022_per_game.html). The data has information on player position, points scored, and minutes played as well as other stats.  
