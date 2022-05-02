@@ -1,9 +1,14 @@
 # Domain of Interest 
 
 #Why are you interested in this field/domain?
+# We are interested in this domain because we all share a love for basketball and are curious
+# about the statistics behind the professional level of one of our favorite games.
 #What other examples of data driven project have you found related to this domain (share at least 3)?
-#What data-driven questions do you hope to answer about this domain (share at least 3)?
 
+#What data-driven questions do you hope to answer about this domain (share at least 3)?
+# Does player height correspond to their average score
+# Does player height affect the players shooting average? For better or worse?
+# What position statistically scores the most points
 
 
 # Data 1
