@@ -9,6 +9,7 @@ about the statistics behind the professional level of one of our favorite games.
 Does player height correspond to their average score?  
 Does player height affect the players shooting average? For better or worse?  
 What position statistically scores the most points?  
+Does a players position affect the amount of 3 pointers they shoot?  
 
 
 ## Data 1
@@ -25,10 +26,10 @@ We can answer the question, What position statistically scores the most points.
 
 ## Data 2 
 Where did you download the data (e.g., a web URL)? https://www.kaggle.com/datasets/acasalan/nba-3-point-shooting-202122-corrections   
-How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What questions (from above) can be answered using the data in this dataset?  
+How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about? The data was compiled by A Casalan and extracted from Basketball Reference website. 
+How many observations (rows) are in your data? 590
+How many features (columns) are in the data? 12
+What questions (from above) can be answered using the data in this dataset? Does a players position affect the amount of 3 pointers they shoot?  
 
 
 ## Data 3
