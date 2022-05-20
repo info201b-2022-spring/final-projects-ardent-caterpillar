@@ -1,1 +1,12 @@
+library(ggplot2)
+library(dplyr)
+library(stringr)
 
+data1 <- read.csv("nba3_2021_22_corrections.csv")
+data2 <- read.csv("NBA_2018_per_poss.csv")
+data3 <- read.csv("2021-2022 NBA Player Stats - Playoffz.csv")
+
+summary_info <- list()
+summary_info$num_observations <- nrow(data1)
+summary_info$threePercent <- max(data1$accuracy3P)
+summary_info$three <- filter(data1, pct3PA >= 0.5)
