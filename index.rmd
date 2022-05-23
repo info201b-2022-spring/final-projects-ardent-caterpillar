@@ -1,5 +1,5 @@
 ---
-title: "Summary Info Script"
+title: "index.rmd"
 author: "sahirk"
 date: "5/22/2022"
 output: html_document
