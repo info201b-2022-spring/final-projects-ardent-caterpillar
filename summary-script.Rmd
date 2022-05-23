@@ -1,9 +1,20 @@
+---
+title: "sum"
+author: "sahirk"
+date: "5/22/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 library(dplyr)
 library(stringr)
 
 data1 <- read.csv("nba3_2021_22_corrections.csv")
 data2 <- read.csv("NBA_2018_per_poss.csv")
-data3 <- read.csv2("2021-2022 NBA Player Stats - Playoffs.csv")
+data3 <- read.csv("2021-2022 NBA Player Stats - Playoffs.csv")
 
 # Creates list of dataset information
 summary_info <- list()
@@ -26,9 +37,4 @@ summary_info$maxSteals <- max(data2$STL)
 
 # Calculates and creates a column of assists to turnover ratio
 summary_info$turnoverAssist <- mutate(data3, turnAssistRatio = AST / TOV)
-
-# Calculate and show max distance average.
-summary_info$distance <- max(data1$Distance)
-
-
 
