@@ -12,16 +12,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introductory Paragraph
 
-We are interested in this domain because we all share a love for basketball and are curious about the statistics behind the professional level of one of our favorite games.
-These datasets consist of data from 2018, 3 point percentages, and 2021-2022. 
+We are interested in this domain because we all share a love for basketball and 
+are curious about the statistics behind the professional level of one of our favorite
+games.These datasets consist of data from 2018, 3 point percentages, and 2021-2022. 
 
 ## Summary Paragraph
 
-Through the summary script, we were able to find out plenty of information. The highest 3 point percentage in the NBA during the 2021-2022 season was 1.0, the highest shooting distance average was 27.8 feet, and after some comparisons, we were able to find out that the shooting guard position (SG) takes the most 3pt attempts out of the top 50 attempts taken.
+Through the summary script, we were able to find out plenty of information.
+The highest 3 point percentage in the NBA during the 2021-2022 season was 1.0, the
+highest shooting distance average was 27.8 feet, and after some comparisons, we were able
+to find out that the shooting guard position (SG) takes the most 3pt attempts out of the
+top 50 attempts taken.
 
 ## Render the table
 
-wfiqfiqbfibqf
+--
 
 ## Chart purpose
 

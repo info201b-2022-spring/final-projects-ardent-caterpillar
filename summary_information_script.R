@@ -28,4 +28,4 @@ summary_info$maxSteals <- max(data2$STL)
 summary_info$turnoverAssist <- mutate(data3, turnAssistRatio = AST / TOV)
 
 # Calculate and show max distance average.
-summary_info$distance <- max(data1$Distance)
+summary_info$distance <- max(data1$Distance) 
