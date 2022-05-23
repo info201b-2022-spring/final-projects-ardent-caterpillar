@@ -6,6 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
+source("charts.R")
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -23,5 +24,25 @@ wfiqfiqbfibqf
 
 ## Chart purpose
 
-fjwbfkbwfbwf
+```{r, echo=FALSE, warning=FALSE}
+plot1
+```
 
+This plot shows the realtonship between Points earned per game vs a given position.
+We can see some trends such as "PG-SG" and "SF-SG" earn almost no points as they
+are defensive postions.
+
+```{r, echo=FALSE, warning=FALSE}
+plot2
+```
+
+Here we can see three throw count per game vs the the age of a player.
+We can see overall ages 25-29 tend to make the most free throws per game.
+Then there is a drastic fall at age 30
+
+```{r, echo=FALSE, warning=FALSE}
+plot3
+```
+
+In this plot we can see the relationship between Free throw count per game vs the 
+amount of free throw attempts in a given game. This chart shows that there is hard to find a correlation between the success of free throws from a players age`
