@@ -29,6 +29,3 @@ summary_info$turnoverAssist <- mutate(data3, turnAssistRatio = AST / TOV)
 
 # Calculate and show max distance average.
 summary_info$distance <- max(data1$Distance)
-
-
-
