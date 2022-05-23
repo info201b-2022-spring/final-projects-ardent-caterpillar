@@ -22,4 +22,3 @@ plot3 <- ggplot(data = data1) +
     geom_point(mapping = aes(x = FTA, y = FT., color = Age)) +
     labs(title = "Free throw count vs Free throw attempts",
          x="Free throw attempts per game", y="Free Throw count") 
-    
