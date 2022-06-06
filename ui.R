@@ -5,6 +5,8 @@ library("plotly")
 library("shinythemes")
 library("htmltools")
 
+advanced_data <- read.csv("data/nba_2021_22_advanced_stats.csv")
+team_names <- advanced_data$Tm
 data1 <- read.csv("data/2021-2022 NBA Player Stats - Playoffz.csv")
 
 introduction <- tabPanel(
@@ -16,14 +18,16 @@ introduction <- tabPanel(
     mainPanel(
         img(src="https://besthqwallpapers.com/Uploads/28-3-2022/196507/nba-carbon-logo-4k-grunge-art-national-basketball-association-carbon-background.jpg", width="100%", align="center"), 
         h1("Summary of addressed concepts:", align = "center"),
-        h2("ENTER CONCEPT #1 HERE: "),
-        p("Foo  
-        
+        h2("How do players from the same team releate to each other: "),
+        p("This question can be solved using a fundemental machine learning 
+           learning technique called Principal Compmenent Anyalsis. This
+           technique summeraizes high dimension data into a dimension that can
+           be plotted.
         "),
-        h2("ENTER CONCEPT #2 HERE: "),
-        p("Bar
-        
-        "),
+        h2("How does Age by Postion releate to Points Scored:"),
+        p("This question can be solved by graphing the age vs the Average Points
+           points scored per game to see the overall trends."
+          ),
         h2("ENTER CONCEPT #2 HERE: "),
         p("Bam
         
@@ -35,26 +39,38 @@ introduction <- tabPanel(
 concept_1 <- tabPanel(
     "PCA of Player Corrleation",
     titlePanel(
-        h1("Principal component analysis of Players", align="Center")
+        h1("Principal Component Analysis of Players", align="center")
     ),
     
-    sidebarLayout(
-        sidebarPanel(
-            textInput(
-                inputId="PCA",    
-                label="foo",
-                value="LAL"
-            )    
-        ),
+    h2("Correlation between players graph"),
+    fluidRow(
+        column(8, align="center"),
+        plotlyOutput("plot", width="50%", height="800px")
+    ),
+    
+    selectInput(
+        inputId="PCA",    
+        label="Select a team",
+        choices=team_names,
+        selected=team_names[0]
+    ),    
         
-        mainPanel(
-            h2("SUMMARY OF PLOT TITLE"),
-            p("foo"),
-            plotlyOutput("plot"),
-            h2("Findings"),
-            p("bar"
-            ) 
-        )
+        
+    mainPanel(
+        p("This chart comes from an unsurpvised method of machine learning
+          called principal component analysis (PCA). The way PCA works is that closer points are
+          together, the higher they are corrleated. The more postive PC values we have
+          the stronger impact they have within our orginal data"),
+        h2("Findings"),
+        p("We can see here that players that play simular postions such as
+          safe guard are more correleated than Power Foward. All the defensive roles
+          tend to form their own induval clusters with lower PC values, while the offensive postions
+          form paser clusters that have higher PC values. We can also notice highly rated teams
+          end up having the highest PC values. This makes sense as teams that are consiently
+          doing well are going to have a stronger corrleation all togther. 
+          Some outliers within this data may be caused by players who were benched
+          or didnt recive much game time due to an injury. This is due to the fact the data
+          spans the whole season and isn't normalized for each 32 minute time period.") 
     )
 )
 
@@ -100,27 +116,6 @@ concept_2 <- tabPanel(
   )
 )
 
-#concept_2 <- tabPanel(
- #   "CONCEPT #2",
-  #  titlePanel(
-   #     h1("CONCEPT #2 HERE", align="Center")
-    #),
-    #
-    #sidebarLayout(
-     #   sidebarPanel(
-            
-      #  ),
-        
-       # mainPanel(
-        #    h2("Points Scored VS Age by Position"),
-         #   p("foo"),
-          #  h2("Findings"),
-           # p("bar"
-            #) 
-        #)
-#    )
-#)
-
 concept_3 <- tabPanel(
     "3 point attempts vs Age",
     titlePanel(
@@ -141,11 +136,33 @@ conclusion <- tabPanel(
         h1("Conclusion", align="center")
     ),
     
-    h3("Takeaway one", align="center"),
-    p("foo"),
+    h3("Takeaway about Player Similarities", align="center"),
+    p("Looking at the player similarities for each team we can notice that
+      players with large postive PC values the generally end being the top scoring
+      players and offensive postions, which leads to a high player value. 
+      This is due to the fact NBA postions and playstyles are everevolving and 
+      currently lots of stock is put into offensive players that score while 
+      later draft picks are used on defensive players. Overall this graph is very
+      useful vislulizaing data corrleation between the players but it's important
+      to acknowledge the shortcomings of PCA. PCA tends to underfit our data, having  
+      low variance, where each compment may seem close but they are actually miles
+      away from each other."),
      
-    h3("Takeaway two", align="center"),
-    p("bar"),
+    h3("Points Scored VS Age by Position", align="center"),
+    p("According to our observations, the primes of the positions appear to have
+    varied life periods. Centers, for example, have the highest point totals while
+    they are younger, whereas SG have the highest point totals when they are in their 
+    early 30s. We can deduce that different roles put athletes under varied amounts of stress.
+
+body, resulting in a shorter prime for more aggressive positions, and
+
+more, firing heavy situations as they get older to develop their talents The Shooting 
+      Guard and Point Guard positions appear to be the best examples of positions that
+      flourish as they become older. On the other hand, we can observe that the Small 
+      Forward and Center positions have declining results as they become older, likely
+      due to damage from the more risky position. Finally, we can see that the Power
+      Forward position is a hybrid of the two, with largely linear evolution and a big 
+      spike in average points early in the player's career."),
     
     h3("Takeaway three", align="center"),
     p("bam")
