@@ -31,19 +31,24 @@ introduction <- tabPanel(
 
 # Chart 1 page - map
 concept_1 <- tabPanel(
-    "CONCEPT #1",
+    "PCA of Player Corrleation",
     titlePanel(
-        h1("CONCEPT #1 HERE", align="Center")
+        h1("Principal component analysis of Players", align="Center")
     ),
     
     sidebarLayout(
         sidebarPanel(
-            
+            textInput(
+                inputId="PCA",    
+                label="foo",
+                value="LAL"
+            )    
         ),
         
         mainPanel(
             h2("SUMMARY OF PLOT TITLE"),
             p("foo"),
+            plotlyOutput("plot"),
             h2("Findings"),
             p("bar"
             ) 
