@@ -24,10 +24,10 @@ introduction <- tabPanel(
            technique summeraizes high dimension data into a dimension that can
            be plotted.
         "),
-        h2("Points Scored VS Age by Position"),
-        p("Do players position and age affect their ability to score in the NBA
-        
-        "),
+        h2("How does Age by Postion releate to Points Scored:"),
+        p("This question can be solved by graphing the age vs the Average Points
+           points scored per game to see the overall trends."
+          ),
         h2("ENTER CONCEPT #2 HERE: "),
         p("Bam
         
