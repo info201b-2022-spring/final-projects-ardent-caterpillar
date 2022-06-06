@@ -51,26 +51,52 @@ concept_1 <- tabPanel(
     )
 )
 
-concept_2 <- tabPanel(
-    "CONCEPT #2",
-    titlePanel(
-        h1("CONCEPT #2 HERE", align="Center")
-    ),
-    
-    sidebarLayout(
-        sidebarPanel(
-            
-        ),
-        
-        mainPanel(
-            h2("SUMMARY OF PLOT TITLE"),
-            p("foo"),
-            h2("Findings"),
-            p("bar"
-            ) 
-        )
-    )
+scatter_sidebar <- sidebarPanel(
+  selectInput(
+    inputId = "variable",
+    label = "Select Position",
+    choices = c("Point Guard", "Center", "Power Forward", "Shooting Guard", "Small Forward"),
+    selected = NULL,
+    multiple = FALSE
+  ),
+  textOutput(outputId = "description")
 )
+
+scatter_main <- mainPanel(
+  plotlyOutput(outputId = "scatter_plot")
+)
+
+concept_2 <- tabPanel(
+  "Points Scored VS Age by Position",
+  sidebarLayout(
+    scatter_sidebar,
+    scatter_main,
+  ),
+  fluidPage(
+    p()
+  )
+)
+
+#concept_2 <- tabPanel(
+ #   "CONCEPT #2",
+  #  titlePanel(
+   #     h1("CONCEPT #2 HERE", align="Center")
+    #),
+    #
+    #sidebarLayout(
+     #   sidebarPanel(
+            
+      #  ),
+        
+       # mainPanel(
+        #    h2("Points Scored VS Age by Position"),
+         #   p("foo"),
+          #  h2("Findings"),
+           # p("bar"
+            #) 
+        #)
+#    )
+#)
 
 concept_3 <- tabPanel(
     "CONCEPT #3",
