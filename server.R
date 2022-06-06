@@ -6,6 +6,7 @@ library(ggplot2)
 source("chart_1.R")
 
 data1 <- read.csv("data/2021-2022 NBA Player Stats - Playoffz.csv")
+data2 <- read.csv("data/nba3_2021_22_corrections.csv")
 
 server <- function(input, output) {
    output$plot <- renderPlotly(
@@ -41,5 +42,14 @@ server <- function(input, output) {
        else if(input$user_category == "PF"){
            return("Power Forward")
        }
+   })
+   output$scatter_plotl <- renderPlotly({
+     plotThree <- ggplot(data2filter) + 
+       geom_point(mapping = aes(x = Age, y = pct3PA, color = Pos)) +
+       labs(x = "Age", y = "3pt attempts taken per game", color = "User selected position")
+     
+     turnToPlotly <- ggplotly(scatter_plot)
+     
+     return(turnToPlotly)
    })
 }
