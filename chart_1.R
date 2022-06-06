@@ -6,10 +6,6 @@ library(datasets)
 library(corrplot)
 library(stats)
 library(ggrepel)
-library(textir) 
-library(BBmisc)
-library(rstudioapi)
-library(factoextra)
 
 get_pca <- function(inputs) {
     # -------------- Data  Import --------------------
@@ -38,25 +34,25 @@ get_pca <- function(inputs) {
     feature_df <- normalize(feature_df, method="standardize")
     
     # --------------- Unsupervised Learning -----------------
-    res_cov <- cov(feature_df);
+    res_cov <- cov(feature_df)
     
-    round(res_cov, 2);
+    round(res_cov, 2)
     
-    eig <- eigen(res_cov)$vectors;
+    eig <- eigen(res_cov)$vectors
     
-    eigenv2 <- eig[,(1:2)];
+    eigenv2 <- eig[,(1:2)]
     
-    stats_matrix <- data.matrix(feature_df, rownames.force = NA);
+    stats_matrix <- data.matrix(feature_df, rownames.force = NA)
     
-    PrincipalComponents2 <- stats_matrix%*%eigenv2;
+    principal_components <- stats_matrix %*% eigenv2
     
-    stats_df <- data.frame(PrincipalComponents2); 
+    stats_df <- data.frame(principal_components) 
     
     # PCA Plot
     result <- ggplot(stats_df,aes(stats_df$X1, stats_df$X2)) +
-        labs(x="PC1",y="PC2")+
-        geom_point(data=main_df, aes(col=Pos, size=VORP))+
-        geom_text_repel(data=main_df, aes(label=Player), size=3+main_df$VORP/max(main_df$VORP)) 
+        geom_point(data=main_df, aes(col=Pos, size=VORP)) +
+        geom_text(data=main_df, aes(label=Player), size=3+main_df$VORP/max(main_df$VORP)) +
+        labs(x="PC1", y="PC2") 
     
     return(result)
 } 
