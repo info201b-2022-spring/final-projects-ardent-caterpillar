@@ -122,23 +122,16 @@ concept_2 <- tabPanel(
 #)
 
 concept_3 <- tabPanel(
-    "CONCEPT #3",
+    "3 point attempts vs Age",
     titlePanel(
-        h1("CONCEPT #3 HERE", align="Center")
+        h1("3 point attempts vs Age", align="Center")
     ),
-    
     sidebarLayout(
-        sidebarPanel(
-            
-        ),
-        
-        mainPanel(
-            h2("SUMMARY OF PLOT TITLE"),
-            p("foo"),
-            h2("Findings"),
-            p("bar"
-            ) 
-        )
+      scatter_sidebar,
+      scatter_main,
+    ),
+    h2("Findings", align="Center"),
+    p("From "
     )
 )
 
