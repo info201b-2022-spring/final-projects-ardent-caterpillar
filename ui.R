@@ -28,10 +28,10 @@ introduction <- tabPanel(
         p("This question can be solved by graphing the age vs the Average Points
            points scored per game to see the overall trends."
           ),
-        h2("ENTER CONCEPT #2 HERE: "),
-        p("Bam
-        
-        "),
+        h2("3 point attempts vs Age:"),
+        p("This question can be solved by graphing a scatterplot showing the Age to 
+          3 point attempt relation."
+          ),
     )
 )
 
