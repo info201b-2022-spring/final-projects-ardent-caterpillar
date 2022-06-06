@@ -164,9 +164,14 @@ more, firing heavy situations as they get older to develop their talents The Sho
       Forward position is a hybrid of the two, with largely linear evolution and a big 
       spike in average points early in the player's career."),
     
-    h3("Takeaway three", align="center"),
-    p("bam")
-)
+    h3("3 point attempts vs Age", align="Center"),
+    p("One of the questions we asked at the start of our analysis was if age had any
+      correlation to how many 3 pointers an NBA player attempted. We had asked this
+      question because it seems to us that younger players tend to shoot more 3 pointers
+      than older players. So after analyzing specific data from this past years season,
+      we were able to find out that age does not affect the amount of 3 point attempts 
+      taken."
+),
 
 
 ui <- navbarPage(
