@@ -25,7 +25,6 @@ get_pca <- function(inputs) {
     # --------------- Team Selection -------------------------
     
     team1 <- inputs
-    team2 <- "MEM"
     
     main_df <- main_df %>%
         filter(Tm == team1) 

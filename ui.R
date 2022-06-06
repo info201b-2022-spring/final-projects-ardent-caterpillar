@@ -65,7 +65,12 @@ concept_1 <- tabPanel(
         p("We can see here that players that play simular postions such as
           safe guard are more correleated than Power Foward. All the defensive roles
           tend to form their own induval clusters with lower PC values, while the offensive postions
-          form paser clusters that have higher PC values.") 
+          form paser clusters that have higher PC values. We can also notice highly rated teams
+          end up having the highest PC values. This makes sense as teams that are consiently
+          doing well are going to have a stronger corrleation all togther. 
+          Some outliers within this data may be caused by players who were benched
+          or didnt recive much game time due to an injury. This is due to the fact the data
+          spans the whole season and isn't normalized for each 32 minute time period.") 
     )
 )
 
@@ -140,8 +145,15 @@ conclusion <- tabPanel(
     
     h3("Takeaway about Player Similarities", align="center"),
     p("Looking at the player similarities for each team we can notice that
-      players with large postive PCA values the generally end being the top scoring
-      players, which leads to a high player value"),
+      players with large postive PC values the generally end being the top scoring
+      players and offensive postions, which leads to a high player value. 
+      This is due to the fact NBA postions and playstyles are everevolving and 
+      currently lots of stock is put into offensive players that score while 
+      later draft picks are used on defensive players. Overall this graph is very
+      useful vislulizaing data corrleation between the players but it's important
+      to acknowledge the shortcomings of PCA. PCA tends to underfit our data, having  
+      low variance, where each compment may seem close but they are actually miles
+      away from each other."),
      
     h3("Takeaway two", align="center"),
     p("bar"),
