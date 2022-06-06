@@ -2,9 +2,9 @@ library(ggplot2)
 library(dplyr)
 library(stringr)
 
-data1 <- read.csv("data/nba3_2021_22_corrections.csv")
+data1 <- read.csv("data/2021-2022 NBA Player Stats - Playoffz.csv")
 data2 <- read.csv("data/NBA_2018_per_poss.csv")
-data3 <- read.csv("data/2021-2022 NBA Player Stats - Playoffz.csv")
+data3 <- read.csv("data/nba3_2021_22_corrections.csv")
 
 #Aggragate Table 1 Script 
 
