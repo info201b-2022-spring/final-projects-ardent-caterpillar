@@ -126,7 +126,11 @@ concept_3 <- tabPanel(
       scatter_main,
     ),
     h2("Findings", align="Center"),
-    p("From "
+    p("The 3 point shot has not always been in the NBA. It is a relatively new thing
+      in the NBA and we wanted to see if has any effect on the age of the players. You 
+      would think the younger players would be shooting more 3 pointers, because it was 
+      slowly gaining popularity. Through this graph you can see how age is affecting 3
+       point attempts."
     )
 )
 
