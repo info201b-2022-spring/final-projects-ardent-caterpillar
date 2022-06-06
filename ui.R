@@ -20,8 +20,8 @@ introduction <- tabPanel(
         p("Foo  
         
         "),
-        h2("ENTER CONCEPT #2 HERE: "),
-        p("Bar
+        h2("Points Scored VS Age by Position"),
+        p("Do players position and age affect their ability to score in the NBA
         
         "),
         h2("ENTER CONCEPT #2 HERE: "),
@@ -151,8 +151,21 @@ conclusion <- tabPanel(
     h3("Takeaway one", align="center"),
     p("foo"),
      
-    h3("Takeaway two", align="center"),
-    p("bar"),
+    h3("Points Scored VS Age by Position", align="center"),
+    p("According to our observations, the primes of the positions appear to have
+    varied life periods. Centers, for example, have the highest point totals while
+    they are younger, whereas SG have the highest point totals when they are in their 
+    early 30s. We can deduce that different roles put athletes under varied amounts of stress.
+
+body, resulting in a shorter prime for more aggressive positions, and
+
+more, firing heavy situations as they get older to develop their talents The Shooting 
+      Guard and Point Guard positions appear to be the best examples of positions that
+      flourish as they become older. On the other hand, we can observe that the Small 
+      Forward and Center positions have declining results as they become older, likely
+      due to damage from the more risky position. Finally, we can see that the Power
+      Forward position is a hybrid of the two, with largely linear evolution and a big 
+      spike in average points early in the player's career."),
     
     h3("Takeaway three", align="center"),
     p("bam")
